@@ -2,19 +2,18 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./fontawesome/css/all.min.css">
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css" />
 
     <title>My Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="./media/ic.png">
-
+    <link rel="icon" type="image/x-icon" href="./media/ic.png" />
 </head>
 
 <body>
@@ -25,16 +24,20 @@
                     <a class="name" href="#">E</a>
                     <h3>Eranda</h3>
                 </div>
-                <nav class="flex gap-1 align-center">
-                    <ul class="flex gap-2 navbar">
+                <nav class="flex gap-1 align-center topnav">
+                    <ul id="top_nav" class="gap-2 navbar align-center">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#process">Process</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#blog">Blog</a></li>
                         <li><a href="#">Services</a></li>
+                        <a href="#contact" class="btn">Contact</a>
                     </ul>
-                    <a href="#contact" class="btn">Contact</a>
+                    <div class="flex gap-1 align-center">
+                    <button href="#" class="icon_nav" onclick="hamburgerToggle()">
+                        <i class="fa fa-bars"></i></button>
+                </div>
                 </nav>
             </div>
         </div>
@@ -44,10 +47,13 @@
             <div class="container flex gap-2">
                 <div class="left">
                     <h1>Hello, I'm Eranda</h1>
-                    <p>I'm an intern Software engineer and Developer based in Tirana, Albania. I strives to build
-                        immersive and beautiful web applications through carefully crafted code and user-centric design.
+                    <p>
+                        I'm an intern Software engineer and Developer based in Tirana,
+                        Albania. I strive to build immersive and beautiful web
+                        applications through carefully crafted code and user-centric
+                        design.
                     </p>
-                    <button class="btn">Say Hello!</button>
+                    <button onclick="hello()" class="btn">Say Hello!</button>
                     <div class="flex gap-1">
                         <div class="box">
                             <h3>1Y.</h3>
@@ -64,27 +70,32 @@
                     </div>
                 </div>
                 <div class="right">
-                    <img class="soft_img" src="./media/softwear.jpg" alt="">
+                    <img class="soft_img" src="./media/softwear.jpg" alt="" />
                 </div>
             </div>
         </div>
         <div class="temp">
             <div class="container flex box-card">
                 <div class="left1">
-                    <img class="soft_img" src="./media/softwear.jpg" alt="">
+                    <img class="soft_img" src="./media/softwear.jpg" alt="" />
                     <div class="social_icons">
                         <i class="fa-brands fa-facebook-f"></i>
-                        <i class="fa-brands fa-instagram"></i>
+                        <a href="https://github.com/erandadervishi/portfolio" target="_blank"><i class="fa-brands fa-github"></i></a>
                         <i class="fa-brands fa-linkedin"></i>
                         <i class="fa-solid fa-envelope"></i>
                     </div>
                 </div>
                 <div class="right1">
                     <h2>I am Professional User Experience Designer</h2>
-                    <p>I design and develop services for customers specializing creating stylish, modern websites, web
-                        services and online stores. My passion is to design digital user experiences.</p>
-                    <p>I design and develop services for customers specializing creating stylish, modern websites, web
-                        services.</p>
+                    <p>
+                        I design and develop services for customers specializing creating
+                        stylish, modern websites, web services and online stores. My
+                        passion is to design digital user experiences.
+                    </p>
+                    <p>
+                        I design and develop services for customers specializing creating
+                        stylish, modern websites, web services.
+                    </p>
                     <button class="btn">My Project</button>
                     <button class="btn_2">
                         <i class="fa-solid fa-download"></i>
@@ -97,30 +108,48 @@
             <div class="container flex gap-2 align-center">
                 <div class="work_process">
                     <h2>Work Process</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius eget velit non,
-                        laoreet imperdiet orci. Mauris ultrices eget lorem ac vestibulum. Suspendis imperdiet,</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, accusantium.</p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                        purus arcu, varius eget velit non, laoreet imperdiet orci. Mauris
+                        ultrices eget lorem ac vestibulum. Suspendis imperdiet,
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo,
+                        accusantium.
+                    </p>
                 </div>
                 <div class="process">
                     <div class="card">
                         <i class="fa-solid fa-book"></i>
                         <h5>1.Research</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe assumenda aut quibusdam!</p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe
+                            assumenda aut quibusdam!
+                        </p>
                     </div>
                     <div class="card">
                         <i class="fa-solid fa-chart-line"></i>
                         <h5>2.Analyze</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe assumenda aut quibusdam!</p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe
+                            assumenda aut quibusdam!
+                        </p>
                     </div>
                     <div class="card">
                         <i class="fa-solid fa-pen"></i>
                         <h5>3.Design</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe assumenda aut quibusdam!</p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe
+                            assumenda aut quibusdam!
+                        </p>
                     </div>
                     <div class="card">
                         <i class="fa-solid fa-laptop"></i>
                         <h5>4.Launch</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe assumenda aut quibusdam!</p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe
+                            assumenda aut quibusdam!
+                        </p>
                     </div>
                 </div>
             </div>
@@ -129,12 +158,14 @@
             <div class="container">
                 <div class="port">
                     <h2>Portfolio</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, vero minus voluptatem ratione
-                        provident quos.</p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
+                        vero minus voluptatem ratione provident quos.
+                    </p>
                 </div>
                 <div class="portfolio">
                     <div class="portfolio_cards">
-                        <img src="./media/unsplash1.png" alt="">
+                        <img src="./media/unsplash1.png" alt="" />
                         <div class="pad-1">
                             <p>HTML-CSS DESIGN</p>
                             <h4>Product Admin Dashboard</h4>
@@ -146,7 +177,7 @@
                         </div>
                     </div>
                     <div class="portfolio_cards">
-                        <img src="./media/unsplash2.png" alt="">
+                        <img src="./media/unsplash2.png" alt="" />
                         <div class="pad-1">
                             <p>HTML-CSS DESIGN</p>
                             <h4>Product Admin Dashboard</h4>
@@ -158,7 +189,7 @@
                         </div>
                     </div>
                     <div class="portfolio_cards">
-                        <img src="./media/unsplash3.png" alt="">
+                        <img src="./media/unsplash3.png" alt="" />
                         <div class="pad-1">
                             <p>HTML-CSS DESIGN</p>
                             <h4>Product Admin Dashboard</h4>
@@ -170,7 +201,7 @@
                         </div>
                     </div>
                     <div class="portfolio_cards">
-                        <img src="./media/unsplash4.png" alt="">
+                        <img src="./media/unsplash4.png" alt="" />
                         <div class="pad-1">
                             <p>HTML-CSS DESIGN</p>
                             <h4>Product Admin Dashboard</h4>
@@ -182,7 +213,7 @@
                         </div>
                     </div>
                     <div class="portfolio_cards">
-                        <img src="./media/unsplash5.png" alt="">
+                        <img src="./media/unsplash5.png" alt="" />
                         <div class="pad-1">
                             <p>HTML-CSS DESIGN</p>
                             <h4>Product Admin Dashboard</h4>
@@ -194,7 +225,7 @@
                         </div>
                     </div>
                     <div class="portfolio_cards">
-                        <img src="./media/unsplash6.png" alt="">
+                        <img src="./media/unsplash6.png" alt="" />
                         <div class="pad-1">
                             <p>HTML-CSS DESIGN</p>
                             <h4>Product Admin Dashboard</h4>
@@ -206,14 +237,17 @@
                         </div>
                     </div>
                 </div>
-                <button class="btn center">More Projects</button>
+                <button onclick="showMore()" class="btn center">More Projects</button>
             </div>
         </div>
         <div class="section5">
             <div class="container">
                 <h1>Do you have Project Idea?</h1>
                 <h1>Let's discuss your project!</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eaque commodi nesciunt.</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eaque
+                    commodi nesciunt.
+                </p>
                 <button class="btn">
                     <a href="#">Let’s work Together</a>
                     <i class="fa-solid fa-arrow-right"></i>
@@ -224,36 +258,47 @@
             <div class="container">
                 <div class="blog_head">
                     <h2>Blog</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi quaerat alias omnis fugit sed est
-                        qui necessitatibus ea placeat id!</p>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
+                        quaerat alias omnis fugit sed est qui necessitatibus ea placeat
+                        id!
+                    </p>
                 </div>
                 <div class="blog">
                     <div class="blog_card">
-                        <img src="./media/blog1.png" alt="">
+                        <img src="./media/blog1.png" alt="" />
                         <div class="pad-1">
                             <p>05 Apr, 2024 / 10 Comments</p>
-                            <p class="blog_p">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                            <p class="blog_p">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            </p>
                         </div>
                     </div>
                     <div class="blog_card">
-                        <img src="./media/blog2.png" alt="">
+                        <img src="./media/blog2.png" alt="" />
                         <div class="pad-1">
                             <p>05 Apr, 2024 / 10 Comments</p>
-                            <p class="blog_p">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                            <p class="blog_p">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            </p>
                         </div>
                     </div>
                     <div class="blog_card">
-                        <img src="./media/blog3.png" alt="">
+                        <img src="./media/blog3.png" alt="" />
                         <div class="pad-1">
                             <p>05 Apr, 2024 / 10 Comments</p>
-                            <p class="blog_p">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                            <p class="blog_p">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            </p>
                         </div>
                     </div>
                     <div class="blog_card">
-                        <img src="./media/blog4.png" alt="">
+                        <img src="./media/blog4.png" alt="" />
                         <div class="pad-1">
                             <p>05 Apr, 2024 / 10 Comments</p>
-                            <p class="blog_p">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                            <p class="blog_p">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -263,23 +308,37 @@
             <div class="container flex gap-2 align-center">
                 <div class="what left7">
                     <h2>What I do</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius eget velit non,
-                        laoreet imperdiet orci. Mauris ultrices eget lorem ac vestibulum. Suspendis imperdiet,</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, accusantium.</p>
-                    <button class="btn">Say Hello!</button>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                        purus arcu, varius eget velit non, laoreet imperdiet orci. Mauris
+                        ultrices eget lorem ac vestibulum. Suspendis imperdiet,
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo,
+                        accusantium.
+                    </p>
                 </div>
                 <div class="know right7">
                     <div class="know_card">
                         <h5>HTML</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe assumenda aut quibusdam!</p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe
+                            assumenda aut quibusdam!
+                        </p>
                     </div>
                     <div class="know_card">
                         <h5>CSS</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe assumenda aut quibusdam!</p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe
+                            assumenda aut quibusdam!
+                        </p>
                     </div>
                     <div class="know_card">
                         <h5>JavaScript</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe assumenda aut quibusdam!</p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe
+                            assumenda aut quibusdam!
+                        </p>
                     </div>
                 </div>
             </div>
@@ -288,16 +347,18 @@
             <div class="container">
                 <div class="happy">
                     <h2>Happy Clients</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat doloremque similique quisquam
-                        sint corrupti qui. Aliquid.</p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat
+                        doloremque similique quisquam sint corrupti qui. Aliquid.
+                    </p>
                 </div>
                 <div class="clients">
-                    <img src="./media/google.svg" alt="">
-                    <img src="./media/dribbble.svg" alt="">
-                    <img src="./media/linkedin.svg" alt="">
-                    <img src="./media/amazon.svg" alt="">
-                    <img src="./media/medium.svg" alt="">
-                    <img src="./media/spotify.svg" alt="">
+                    <img src="./media/google.svg" alt="" />
+                    <img src="./media/dribbble.svg" alt="" />
+                    <img src="./media/linkedin.svg" alt="" />
+                    <img src="./media/amazon.svg" alt="" />
+                    <img src="./media/medium.svg" alt="" />
+                    <img src="./media/spotify.svg" alt="" />
                 </div>
             </div>
         </div>
@@ -305,8 +366,10 @@
             <div class="container flex gap-2 discuss">
                 <div class="project">
                     <h2>Let’s discuss your Project</h2>
-                    <p>There are many variations of passages of Lorem Ipsu available. but the majority have suffered
-                        alte.</p>
+                    <p>
+                        There are many variations of passages of Lorem Ipsu available. but
+                        the majority have suffered alte.
+                    </p>
                     <div class="info flex align-center">
                         <i class="fa-solid fa-location-dot"></i>
                         <div>
@@ -330,22 +393,25 @@
                     </div>
                     <div class="social_icons_projects">
                         <i class="fa-brands fa-facebook-f"></i>
-                        <i class="fa-brands fa-instagram"></i>
+                        <a href="https://github.com/erandadervishi/portfolio" target="_blank"><i class="fa-brands fa-github"></i></a>
                         <i class="fa-brands fa-linkedin"></i>
                         <i class="fa-solid fa-envelope"></i>
                     </div>
                 </div>
                 <div class="submit">
-                    <p class="form-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, facere.</p>
+                    <p class="form-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
+                        facere.
+                    </p>
                     <form class="flex flex-wrap contact-form">
-                        <input class="w-full" type="Name" placeholder="Name*">
-                        <input class="w-full" type="email" placeholder="Email*">
-                        <input class="w-full" type="location" placeholder="Location">
+                        <input class="w-full" type="Name" placeholder="Name*" />
+                        <input class="w-full" type="email" placeholder="Email*" />
+                        <input class="w-full" type="location" placeholder="Location" />
                         <div class="flex w-full gap-1">
-                            <input class="one-third" type="budget" placeholder="Budget*">
-                            <input class="two-third" type="subject" placeholder="Subject*">
+                            <input class="one-third" type="budget" placeholder="Budget*" />
+                            <input class="two-third" type="subject" placeholder="Subject*" />
                         </div>
-                        <input class="w-full" type="message" placeholder="Message*">
+                        <input class="w-full" type="message" placeholder="Message*" />
                         <button class="btn">
                             <a href="#">Submit</a>
                             <i class="fa-solid fa-arrow-right"></i>
@@ -372,10 +438,15 @@
                         <li><a href="#">Services</a></li>
                     </ul>
                 </nav>
-                <p>Copyright <i class="fa-regular fa-copyright"></i> 2024 Honest Solutions</p>
+                <p>
+                    Copyright <i class="fa-regular fa-copyright"></i> 2024 Honest
+                    Solutions
+                </p>
             </div>
         </div>
     </footer>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>

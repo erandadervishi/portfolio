@@ -218,6 +218,10 @@ nav .btn {
     color: #000;
 }
 
+.navbar {
+    display: flex;
+}
+
 .btn {
     background: #a53dff;
     border-style: none;
@@ -227,6 +231,8 @@ nav .btn {
     color: #fff;
     font-size: 15px;
     margin-top: 20px;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 
@@ -617,7 +623,7 @@ footer {
     background: #fff;
     width: 100%;
     border-radius: 10px;
-    box-shadow: 0 0 25px 0 rgba(0,0,0,0.15);
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.15);
     margin-bottom: -7rem;
     z-index: 2;
     position: relative;
@@ -690,11 +696,54 @@ form a {
     margin-right: 1rem;
 }
 
+
+/* hamburger menu */
+
+.topnav {
+    overflow: hidden;
+}
+
+
+.topnav button {
+    color: #fff;
+    padding: 8px 12px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    border: none;
+}
+
+.topnav button.icon_nav {
+    background: #a53dff;
+    display: none;
+    position: relative;
+    right: 0;
+    top: 0;
+    border-radius: 5px;
+}
+
+.topnav button:hover {
+    background-color: #edd8ff;
+    color: black;
+}
+
+.section4 .portfolio div:nth-child(n+4) {
+    display: none;
+}
+
+.section4.more .portfolio div:nth-child(n+4) {
+    display: block;
+}
+
 @media screen and (max-width: 700px) {
 
     .container {
         max-width: 100%;
         padding: 0 1.5rem;
+    }
+
+    .topnav button.icon_nav {
+        display: block;
     }
 
 
@@ -804,4 +853,23 @@ form a {
     .navbar {
         display: none;
     }
-  }
+
+    .navbar.open {
+        display: block;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        background-color: #fff;
+        top: 0;
+        padding: 2rem;
+    }
+
+    .navbar li {
+        margin-bottom: 1rem;
+    }
+
+    .navbar .btn {
+        margin-top: 0.3rem;
+        display: inline-block;
+    }
+}
