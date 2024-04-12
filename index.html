@@ -35,9 +35,9 @@
                         <a href="#contact" class="btn">Contact</a>
                     </ul>
                     <div class="flex gap-1 align-center">
-                    <button href="#" class="icon_nav" onclick="hamburgerToggle()">
-                        <i class="fa fa-bars"></i></button>
-                </div>
+                        <button href="#" class="icon_nav" onclick="hamburgerToggle()">
+                            <i class="fa fa-bars"></i></button>
+                    </div>
                 </nav>
             </div>
         </div>
@@ -53,7 +53,21 @@
                         applications through carefully crafted code and user-centric
                         design.
                     </p>
-                    <button onclick="hello()" class="btn">Say Hello!</button>
+                    <div>
+                        <button id="myBtn" class="btn">Say Hello!</button>
+                        <div id="myModalBox" class="modalBox">
+                            <div class="modalBox-content">
+                                <div class="modalBox-header">
+                                    <a href="#" class="closeBox">&times;</a>
+                                    <h2> Say Hello</h2>
+                                </div>
+                                <div class="modalBox-body">
+                                    <p>This is my portfolio web page. If you have a project let's discuss.</p>
+                                    <p>Feel free to share your ideas, we will make sure to realize them!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="flex gap-1">
                         <div class="box">
                             <h3>1Y.</h3>
@@ -75,12 +89,13 @@
             </div>
         </div>
         <div class="temp">
-            <div class="container flex box-card">
+            <div class="container flex box-card align-center">
                 <div class="left1">
                     <img class="soft_img" src="./media/softwear.jpg" alt="" />
                     <div class="social_icons">
                         <i class="fa-brands fa-facebook-f"></i>
-                        <a href="https://github.com/erandadervishi/portfolio" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://github.com/erandadervishi/portfolio" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
                         <i class="fa-brands fa-linkedin"></i>
                         <i class="fa-solid fa-envelope"></i>
                     </div>
@@ -94,9 +109,14 @@
                     </p>
                     <p>
                         I design and develop services for customers specializing creating
-                        stylish, modern websites, web services.
+                        stylish, modern websites, web services Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Voluptatibus iure suscipit dolorem, impedit commodi placeat sint, <span
+                            id="dots">...</span><span id="moreTxt"> ea vero sed quam vel quibusdam ullam harum! Culpa
+                            perspiciatis, corrupti deserunt omnis sed eveniet velit maxime ducimus exercitationem! Lorem
+                            ipsum dolor, sit amet consectetur adipisicing elit. Enim, unde. Lorem, ipsum dolor sit amet
+                            consectetur adipisicing elit. Nemo, distinctio.</span>
                     </p>
-                    <button class="btn">My Project</button>
+                    <button onclick="myFunction()" id="myBtnr" class="btn">Read More</button>
                     <button class="btn_2">
                         <i class="fa-solid fa-download"></i>
                         <a href="#">Download CV</a>
@@ -409,7 +429,8 @@
                     </div>
                     <div class="social_icons_projects">
                         <i class="fa-brands fa-facebook-f"></i>
-                        <a href="https://github.com/erandadervishi/portfolio" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://github.com/erandadervishi/portfolio" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
                         <i class="fa-brands fa-linkedin"></i>
                         <i class="fa-solid fa-envelope"></i>
                     </div>
