@@ -201,7 +201,7 @@ nav .btn {
 }
 
 .name {
-    background-color: #A53DFF;
+    background-color: #a53dff;
     border: none;
     color: white;
     width: 56px;
@@ -327,11 +327,11 @@ p {
 }
 
 .social_icons i {
-    color: #A53DFF;
+    color: #a53dff;
 }
 
 .social_icons i:hover {
-    background-color: #A53DFF;
+    background-color: #a53dff;
     color: #fff;
     padding: 3px 3px;
 }
@@ -340,10 +340,10 @@ p {
     background: #fff;
     border-radius: 5px;
     padding: 9px 14px;
-    color: #A53DFF;
+    color: #a53dff;
     font-size: 15px;
     margin: 10px 0;
-    border-color: #A53DFF;
+    border-color: #a53dff;
 }
 
 button a {
@@ -523,7 +523,7 @@ button a {
 }
 
 .know_card:hover {
-    border-left: 5px solid #A53DFF;
+    border-left: 5px solid #a53dff;
 }
 
 .section8 {
@@ -565,7 +565,7 @@ button a {
 .info i {
     font-size: 22px;
     text-align: center;
-    color: #A53DFF;
+    color: #a53dff;
     padding: 0.8rem 1rem;
     background-color: #edd8ff;
     border-radius: 0.5rem;
@@ -579,7 +579,7 @@ button a {
 }
 
 .info:hover i {
-    background-color: #A53DFF;
+    background-color: #a53dff;
     color: #fff;
 }
 
@@ -601,11 +601,11 @@ button a {
 }
 
 .social_icons_projects i {
-    color: #A53DFF;
+    color: #a53dff;
 }
 
 .social_icons_projects i:hover {
-    background-color: #A53DFF;
+    background-color: #a53dff;
     color: #fff;
     padding: 5px 5px;
 }
@@ -678,9 +678,9 @@ footer .navbar li a {
 
 .contact-form input:focus {
     border: none;
-    border-bottom: 2px solid #A53DFF;
+    border-bottom: 2px solid #a53dff;
     outline: none;
-    color: #A53DFF;
+    color: #a53dff;
 }
 
 input {
